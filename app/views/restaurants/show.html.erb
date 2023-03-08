@@ -4,5 +4,5 @@
 <% @restaurant.reviews.each do |r| %>
 <li><%= r.content %></li>
 <% end %>
-
-<%= link_to "back", restaurants_path %>
+<p><%= link_to "add_review", new_restaurant_review_path(@restaurant) %></p>
+<p><%= link_to "back", restaurants_path %></p>
